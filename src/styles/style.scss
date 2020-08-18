@@ -1,0 +1,49 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import './variables.scss';
+@import '~@angular/material/theming';
+
+h1, h2, h3, h4, h5, h6, label, p, a{
+  font-family: 'Poppins', sans-serif !important;
+  color: $text-color;
+}
+label{
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 7px;
+}
+input{
+  font-family: 'Poppins', sans-serif !important;
+  color: $text-color-muted;
+  display: block;
+  width: 100%;
+  border: 1px solid #dedede;
+  padding: 7px 5px;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 7px;
+  &:focus{
+    outline-color: #bdd3ff;
+  }
+}
+
+button[disabled] {
+  background-color: #cdcdcd !important;
+  color: $text-color-muted !important;
+}
+.spinner-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}

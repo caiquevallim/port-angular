@@ -1,0 +1,8 @@
+@import "../../../styles/variables";
+nav{
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  position: fixed;
+  height: 49px;
+  left: $sidebar-width;
+  right: 0;
+}

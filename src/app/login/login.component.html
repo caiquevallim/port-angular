@@ -1,0 +1,41 @@
+<div class="login d-flex">
+  <div class="left">
+    <div class="container">
+      <div class="fields">
+        <h2>Bem-vindo!</h2>
+        <h5>Acesse o dashboard</h5>
+        <form [formGroup]="loginForm" (submit)="onSubmit()">
+          <div class="form-row">
+            <div class="col-md-12">
+              <label for="username">Usuário</label>
+              <input type="text" id="username" formControlName="username">
+            </div>
+          </div>
+          <div class="form-row mt-1">
+            <div class="col-md-12">
+              <label for="password">Senha</label>
+              <input type="password" id="password" formControlName="password">
+            </div>
+          </div>
+          <div class="form-row mt-3">
+            <div class="col-md-12">
+              <button type="submit" [disabled]="loginForm.invalid || loading">{{ loading ? 'AGUARDE...' : 'ENTRAR'}}</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="fields">
+      <div class="box">
+        <h2>Hendrix</h2>
+      </div>
+      <br>
+      <br>
+      <br>
+      <p>Leia o manual de introdução e onboarding</p>
+      <p>antes de utilizar o sistema</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<nav class="sidebar">
+
+  <a routerLink="/dashboard"  [routerLinkActive]="['router-link-active']" class="list-group-item">
+    <i class="fa fa-fw fa-modx"></i>&nbsp;
+    <span>Hendrix</span>
+  </a>
+  <a (click)="logout()"  [routerLinkActive]="['router-link-active']" class="list-group-item out">
+    <i class="fa fa-fw fa-sign-out"></i>&nbsp;
+    <span>Sair</span>
+  </a>
+</nav>

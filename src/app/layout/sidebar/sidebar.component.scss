@@ -1,0 +1,22 @@
+@import "../../../styles/variables";
+.sidebar{
+  width: $sidebar-width;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  border-right: 1px solid rgba(0,0,0,.125);
+  .list-group-item{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    color: $primary-color;
+    cursor: pointer;
+    transition: all 300ms;
+    &:hover{
+      background-color: #efefef;
+      font-weight: bold;
+    }
+  }
+  .out{
+    color: $text-color;
+  }
+}

@@ -1,0 +1,72 @@
+@import "../../styles/variables";
+
+.login{
+  width: 100vw;
+  height: 100vh;
+  .left{
+    padding-top: 130px;
+    background-color: white;
+    height: 100vh;
+    width: 50%;
+    .fields{
+      margin: auto;
+      width: 280px;
+      h5{
+        color: #b1b1b1;
+        font-weight: 600;
+      }
+      button{
+        font-family: 'Poppins', sans-serif !important;
+        padding: 7px;
+        text-align: center;
+        width: 100%;
+        font-weight: bold;
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        border-radius: 100px;
+        height: 38px;
+        font-size: 13px;
+        transition: all 0.1s;
+
+        &:focus{
+          outline: none;
+        }
+        &:active{
+          margin-top: 1px;
+          font-size: 12px;
+          height: 36px;
+        }
+      }
+    }
+  }
+  .right{
+    padding-top: 180px;
+    background-color: $primary-color;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+
+    .fields{
+      margin: auto;
+      width: 480px;
+      .box{
+        height: 60px;
+        width: 60px;
+        background-color: #f43f3f;
+      }
+      h2{
+        position: absolute;
+        margin-top: 16px;
+        margin-left: 16px;
+        color: white;
+        font-weight: 600;
+      }
+      p{
+        margin: 0 0 3px 16px;
+        color: #dedede;
+        font-size: 14px;
+      }
+    }
+  }
+}
